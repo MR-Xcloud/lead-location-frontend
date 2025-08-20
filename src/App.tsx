@@ -10,7 +10,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 function App() {
   return (
     <AuthProvider>
-      <Router>
+      <Router basename="/lead-location-frontend">
         <Routes>
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/" element={

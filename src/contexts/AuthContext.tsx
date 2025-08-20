@@ -45,7 +45,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const login = async (email: string, password: string): Promise<boolean> => {
     setIsLoading(true);
     try {
-      const response = await fetch('http://18.188.184.213:8040/login', {
+      const response = await fetch('https://staging.webmobrildemo.com/loan-lead-backend/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -66,7 +66,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const signup = async (name: string, email: string, password: string): Promise<boolean> => {
     setIsLoading(true);
     try {
-      const response = await fetch('http://18.188.184.213:8040/signup', {
+      const response = await fetch('https://staging.webmobrildemo.com/loan-lead-backend/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password }),

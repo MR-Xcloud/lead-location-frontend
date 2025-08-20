@@ -13,7 +13,7 @@ const HistoryPage: React.FC = () => {
         return;
       }
       try {
-        const response = await fetch(`http://18.188.184.213:8040/meetings`, {
+        const response = await fetch(`https://staging.webmobrildemo.com/loan-lead-backend/meetings`, {
           headers: {
             "Authorization": `Bearer ${token}`
           }
